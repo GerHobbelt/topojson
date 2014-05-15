@@ -34,7 +34,7 @@ define(['text'], function(text){
                         buildMap[name] = data;
                         onLoad(data);
                     } else {
-                        console.log(data);
+                        console.log(req.toUrl(name), data);
                         onLoad(jsonParse(data));
                     }
                 },
